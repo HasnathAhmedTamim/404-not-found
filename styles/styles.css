@@ -24,6 +24,7 @@
   background: #fff;
 }
 .header-title {
+  display: grid;
   color: #333;
 
   font-size: 1.5rem;
@@ -48,7 +49,7 @@
 .banner-des {
   color: #4f4f4f;
 
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 
   font-weight: 400;
 
@@ -69,6 +70,8 @@
   font-size: 0.875rem;
 }
 .footer-section {
+  display: grid;
+  justify-content: center;
   color: #bdbdbd;
   text-align: center;
 
@@ -92,4 +95,70 @@ span {
 }
 text-container {
   padding: 2.5rem;
+}
+.hide {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .header-title {
+    flex-direction: column;
+    width: 50%;
+    margin: 30px;
+    margin: 0 auto;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .header-title {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .header-title {
+    width: 49%;
+    margin: 50px;
+  }
+  .container-div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4.76rem;
+    margin-left: 1.5rem;
+    margin-bottom: 10rem;
+    margin-right: 6.44rem;
+    flex-direction: column;
+  }
+  .banner-img {
+    margin-bottom: 1.53rem;
+  }
+  .banner-des {
+    margin-right: 0;
+    margin-bottom: 0;
+    
+    
+
+    
+    margin-left: 0;
+    text-align: center;
+    position: relative;
+    right: 30px;
+  }
+  .footer-section {
+    font-size: 0.75rem;
+  }
+
+  span {
+    font-size: 0.75rem;
+  }
+  .container-div {
+    justify-content: center;
+    margin: 2rem;
+    flex-direction: column;
+  }
+  .banner-text {
+    font-size: 2.5rem;
+  }
 }
